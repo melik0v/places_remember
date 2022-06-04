@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "social_django",
     "main",
+    "user_profile",
+    "memories",
 ]
 
 MIDDLEWARE = [
@@ -138,5 +140,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SOCIAL_AUTH_VK_OAUTH2_KEY = "8184001"
 SOCIAL_AUTH_VK_OAUTH2_SECRET = "WfvytZ9nXRVJbXswDMG1"
 
-# LOGIN_REDIRECT_URL = '/admin'
+# SOCIAL_AUTH_PIPELINE = (
+#     'user_profile.pipeline.get_avatar'
+# )
+
+LOGIN_REDIRECT_URL = "/"
 SOCIAL_AUTH_VK_OAUTH2_SCOPE = ["email", "photos"]
+
+# Users
+AUTH_USER_MODEL = "user_profile.CustomUser"
