@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>HELLO WORLD!</h1>
-    <a href="/login/vk-oauth2">Войти с помощью VK</a>
+    <div>Приветствую, {{ user.username }} {{ user.first_name }} {{ user.last_name }} {{ user_social_auth}}</div>
+    <div>У вас пока нет воспоминаний, исправьте это скорее! :)</div>
     <img src="{{ user.avatar }}">
 </body>
 </html>

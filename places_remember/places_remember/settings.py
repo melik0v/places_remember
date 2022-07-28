@@ -153,7 +153,7 @@ SOCIAL_AUTH_PIPELINE = (
     "user_profile.pipeline.get_avatar",
 )
 
-LOGIN_REDIRECT_URL = "/"
+LOGIN_REDIRECT_URL = "/main"
 SOCIAL_AUTH_VK_OAUTH2_SCOPE = ["email", "photos"]
 
 # Users
